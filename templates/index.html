@@ -17,3 +17,26 @@
     </main>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Cody-Trip | 探索世界</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>✈️ Cody-Trip 專業機票訂購</h1>
+    </header>
+
+    <div class="search-container">
+        <h2 style="color: white; text-align: center; margin-bottom: 20px;">要去哪裡冒險？</h2>
+        <form action="/search" method="POST" class="search-box">
+            <input type="text" name="origin" placeholder="🛫 從哪裡出發？" required>
+            <input type="text" name="destination" placeholder="🛬 想去哪裡？" required>
+            <button type="submit">立即搜尋</button>
+        </form>
+    </div>
+</body>
+</html>
