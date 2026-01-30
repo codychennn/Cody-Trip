@@ -26,4 +26,5 @@ def search_flights():
     return f"正在為您搜尋從 {origin} 到 {destination} 的機票..."
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # 修改這裡：加入 host='0.0.0.0'
+    app.run(host='0.0.0.0', port=5000, debug=True)
